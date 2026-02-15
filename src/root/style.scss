@@ -1,0 +1,43 @@
+
+    .pge-wrapper{
+        display: flex;
+        flex-direction: column;
+        font-family: "Roboto","Helvetica","Arial",sans-serif;
+        font-weight: 500;
+        font-size: 0.875rem;
+        line-height: 1.75;
+        letter-spacing: 0.02857em;
+        text-transform: uppercase;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        background: rgb(165,162,212);
+        background: linear-gradient(0deg, rgba(146, 146, 146, 0.8) 0%, rgb(236, 236, 236) 30%, rgba(255,255,255,1) 100%);
+        
+        .pge-container {
+            height: 50%;
+            width: 100%;
+            max-width: 120000px;
+            padding: 0px 10%;
+            align-self: center;
+            overflow: hidden;
+
+            .pge {
+                animation: fade-in-bottom 1s;
+                height: 100%;
+                width: 100%;
+
+                @keyframes fade-in-bottom {
+                    0% {
+                        transform: translateY(10px);
+                        opacity: 0;
+                    }
+                    100% {
+                        transform: translateY(0);
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+
